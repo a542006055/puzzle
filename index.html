@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="author" content="LOOP-BEATS">
+	<meta name="description" content="Powered by LOOP-BEATS">
+	<meta name="keywords" content="HTML5,WEIXIN,WECHAT,LOOP-BEATS">
+	<meta name="viewport" content="width=device-width,target-densitydpi=device-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="email=no" />
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<style>
+	article.game{background:-webkit-linear-gradient(#a90504,#c90705);}
+	.game .time{font-size: .24rem;color: #fff;text-align: center;padding-top: 2.1rem;padding-bottom: .22rem;}
+	.game .imgCont {width: 4.9rem;height: 4.9rem;margin: 0 auto;position: relative;}
+	.game .imgCont .pic1{width:4.9rem;position: absolute;display: none;z-index: 3 }
+	.game .picDiv{float: left;background-repeat: no-repeat;position: relative;background-size: 4.9rem auto!important;border:#fff 1px solid;-webkit-box-sizing:border-box;}
+	.game .picDiv.active{opacity: .5;}
+	</style>
+</head>
+<body>
+	<!--------------------------------------------------------------html区域-------------------------------------------------------------------------------------------->
+	<article class="game">
+		<div class="time" >
+			制作贺卡用时：<span>00:00</span> <br><span class="start">开始游戏</span>
+		</div>
+		<div class="imgCont" id="imgCont">
+			<img class="pic1">
+		</div>
+		
+	</article>
+	<!--------------------------------------------------------------javascript区域-------------------------------------------------------------------------------------->
+	<script type="text/javascript" src="js/framwork.js"></script>
+	<script type="text/javascript" src="js/pintu.js"></script>
+	<script type="text/javascript">
+	document.body.addEventListener('touchmove', function (event) {
+	    event.preventDefault();
+	}, false);
+	game_handler()
+	$('.start').on("click",function () {
+		$('.imgCont').puzzleStart()
+	})
+	function game_handler(){
+		$('.imgCont').puzzle({row:2,col:2,img:"images/pic1.jpg",success:success_handler});
+		$('.imgCont').puzzleStart()
+
+	}
+	function success_handler(step){
+		console.log(step)
+	}
+	</script>
+</body>
+</html>

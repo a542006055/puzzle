@@ -1,0 +1,27 @@
+﻿/*----------------------------------------- css intro 说明部分 -------------------------------------------*/
+/* iphone版微信内置浏览器工具栏高度为128像素(ip4-ip6/设备像素比x2)/192像素(ip6plus/设备像素比x3)，经过设备像素比缩放后都折算成64像素；android版微信工具栏高度是110像素； */
+/* iphone4/4s screen:320x480/weixin:320x416 */
+/* iphone5/5s screen:320x568/weixin:320x504 */
+/* iphone6 screen:375x667/weixin:375x603 */
+/* iphone6 plus screen:414×736/weixin:414x672 渲染分辨率:1242×2208 */
+/* android 480P screen:480x854/weixin:480x744 */
+/* android 540P screen:540x960/weixin:540x850 */
+/* android 720P screen:720x1280/weixin:720x1134 */
+/* android 1080P screen:1080x1920/weixin:1080x1701 */
+/* android 480P not 16：9 screen:480x800/weixin:480x690 */
+/* android 540P not 16：9 screen:540x906/weixin:540x780 */
+/* android 720P not 16：9 screen:720x1184/weixin:720x1040 */
+/* android 1080P not 16：9 screen:1080x1776/weixin:1080x1557 */
+
+/*iphone版微博APP内置浏览器上下工具栏高度为216像素(设备像素比x2)/324像素(ip6plus/设备像素比x3)，经过设备像素比缩放后都折算成108像素,此数据与safari浏览器保持一致；android版微博工具栏高度是180像素；*/
+/*iphone4/4s:640x744(320x372) */
+/*iphone5/5s:640x920(320x460) */
+/*iphone6:750x1118(375x559) */
+/*iphone6 plus:1242×1884（414x628）*/
+/*android 540P:540×780* /
+/*android 720P:720×1054 */
+/*android 1080P:1080×1575 */
+/* android 480P not 16：9 screen:480x800/weixin:480x620 */
+/* android 540P not 16：9 screen:540x906/weixin:540x716 */
+/* android 720P not 16：9 screen:720x1208/weixin:540x954 */
+/* android 1080P not 16：9 screen:1080x1776/weixin:540x1431 */
